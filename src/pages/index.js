@@ -296,7 +296,7 @@ export default function Home() {
 
             </ Link>
 
-            <Link href="https://portafolio-1-1-git-main-3lli0tald3rs0n.vercel.app/" target="_blank">
+            <Link href="https://anderson-eight.vercel.app/" target="_blank">
 
               <div className="contenedor-imagen">
 
