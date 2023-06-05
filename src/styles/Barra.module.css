@@ -1,0 +1,146 @@
+
+.activado{
+
+	color: #0AD590!important;
+}
+
+
+.barra{
+
+	background: #181818;
+	height: 100vh;
+	position: fixed;
+	width: 15%;
+	max-width: 	180px;
+	transition: ease-in-out .2s;
+	
+
+}
+
+.cerrar{
+
+	position: absolute;
+	top: 10%;
+	right: 2rem;
+	color: blue;
+	opacity: 0;cursor: pointer;
+	z-index: 1000000;
+}
+
+@media(max-width:768px){
+
+	.barra{
+
+	
+	height: 100vh;
+	width: 100%;
+	max-width: 100%;
+	left:0;
+	top: 0;
+	position: fixed;
+	overflow: hidden;
+	opacity: 0;
+	z-index: -1;
+	
+
+	
+
+}
+
+.cerrar{
+
+	opacity: 1;
+}
+
+}
+
+.barra li{
+
+	border-bottom: 1px solid #282828;
+
+}
+
+.barra li:last-of-type{
+
+	border-bottom: none;
+}
+
+.barra li  a{
+
+	color: #809096;
+	display: block;
+	padding: 1rem 0;
+	text-align: center;
+	transition: all .3s;
+
+}
+
+
+.barra li:first-of-type a{
+
+	background-color: black;
+	color: white;
+	margin-bottom: 2rem;
+	font-weight: bold;
+
+}
+
+
+
+.barra li:first-of-type a span:last-of-type{
+
+	color: #80A595;
+	font-weight:normal;
+}
+
+
+
+.barra li a:hover{
+
+	color:#08EFA0;
+
+}
+
+
+.barra li:first-of-type a:hover{
+
+	
+	color: white;
+}
+
+
+
+
+
+
+.barra li:last-of-type a{
+
+	display: inline-block;
+
+}
+
+
+.bg-principal{
+
+	position: relative;
+}
+
+.mostrarBarra{
+
+	overflow: visible;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	top: 0;
+	z-index: 1000000;
+	opacity: 1;
+}
+
+
+.activar{
+
+	color: red;
+
+}
+

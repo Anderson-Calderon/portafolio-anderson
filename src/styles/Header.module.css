@@ -1,0 +1,163 @@
+.header {
+
+
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	
+}
+
+
+@media(max-width: 768px){
+
+	.header {
+
+		min-height: 90vh;
+
+	
+
+	}
+}
+
+
+.header p{
+
+	color: #8D8D8D;
+	font-size: 1.2rem;
+	letter-spacing: .15rem;
+	font-weight: normal;
+	margin-top: 1rem;
+
+}
+
+
+.header h1{
+
+	font-size: 5rem;
+	font-weight: bold;
+	line-height: 5.5rem ;
+	color: white;
+
+}
+
+
+
+.salto{
+
+	display: block;
+	
+}
+
+
+@media(max-width:992px){
+
+	.header h1{
+
+		font-size: 4rem;
+		
+		line-height: 4.2rem ;
+		
+	}
+
+}
+
+@media(max-width:768px){
+
+	.header h1{
+
+		font-size: 3.8rem;
+		line-height: 4rem ;
+		
+		
+		
+	}
+
+	.header{
+
+		padding: 0;
+	}
+
+	
+
+	.header button{
+
+		font-size: .9rem;
+
+	}
+
+	.header p{
+
+	
+	font-size: 1rem;
+	letter-spacing: .15rem;
+	
+	}
+
+
+}
+
+@media(max-width: 468px){
+
+	.header  h1 {
+
+		font-size: 2.8rem;
+		line-height: 3rem ;
+		
+		
+	}
+
+}
+
+@media(max-width: 393px){
+
+	.header  h1 {
+
+		font-size: 2.6rem;
+		line-height: 3rem ;
+		
+		
+	}
+
+	.salto{
+
+		display: none;
+	}
+
+	
+}
+
+
+
+
+.menu{
+
+	position: fixed!important;
+	top: 5%;
+	right: 10%;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 100000;
+
+
+
+}
+
+@media(max-width: 768px){
+
+	.menu{
+
+		opacity: 1;
+
+	}
+
+}
+
+.header{
+
+		position: relative;
+}
+
+

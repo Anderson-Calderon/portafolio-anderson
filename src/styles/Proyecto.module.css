@@ -1,0 +1,467 @@
+/*GENERALES*/
+
+/**{
+
+	font-family: 'Roboto', sans-serif;
+}*/
+
+
+
+.contenedorSupremo h1{
+
+	font-size: 2.8rem;
+	letter-spacing: .2rem;
+	
+	
+
+}
+
+@media(max-width: 992px){
+
+
+	.contenedorSupremo h1{
+
+	font-size: 2rem;
+	
+
+}
+
+}
+
+.contenedorSupremo p{
+
+	font-size: 1rem;
+	font-weight: 200;
+	letter-spacing: .2rem;
+}
+
+/*UTILIDADES*/
+
+.contenedorSupremo{
+
+	position: relative;
+	width: 100%;
+	height: 350px;
+	
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+@media(max-width: 992px){
+
+	.contenedorSupremo{
+
+		height: 300px;
+
+	}
+
+
+
+}
+
+.contenedorProyecto1{
+
+	position: relative;
+	width: 100%;	
+	overflow: hidden;
+	box-shadow: 1px 1px 60px rgba(0,0,0,.6);
+	height:100%;
+
+	
+}
+
+.contenedorProyecto1:after{
+
+	content:"";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	z-index: 8000;
+}
+
+
+/*=================================
+
+				CAPA I
+
+====================================*/
+
+.fondo{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #d1d1d1;
+	transition: all .5s;
+	z-index: 6000;
+	animation: animacionFondo 10s forwards;
+	
+}
+
+
+@keyframes animacionFondo {
+
+	0% , 5%{
+
+		left: 0%;
+
+	}
+
+	8% , 100%{
+
+		left: 100%;
+	}
+
+}
+
+
+
+
+
+
+/*=================================
+
+				CAPA II
+
+====================================*/
+
+.contenido{
+
+	position: absolute;
+	bottom: 0;
+	
+	transition: all .5s;
+	z-index: 10000;
+	padding: .5rem 4rem;
+	opacity: 0;
+	animation: animacionContenido 10s forwards;
+	font-weight: bold;
+	line-height: 2rem;
+}
+
+
+@media(max-width: 992px){
+
+	.contenido{
+
+		padding: .5rem 1rem
+	}
+
+}
+
+.imagenProyecto1{
+
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.imagenProyecto1 img{
+
+	width: 100%;
+	
+	height: 100%;
+	object-fit: cover;
+	object-position: bottom;
+	
+	
+	filter: brightness(.5);
+
+}
+
+
+
+
+.contenido h1, .contenido p , .contenido .boton{
+
+	transition: all .5s;
+	transition-delay: .4s;
+	
+	
+}
+
+
+.boton{
+
+	background: #FD2155;
+	
+	font-weight: bold;
+	padding: .2rem 1rem;
+	border:none;
+	font-size: 1rem;
+	letter-spacing: .3rem;
+	cursor:pointer;
+	width: 8rem;
+
+}
+
+.contenedorSupremo .contenido div {
+
+	
+	transition: all .5s;
+	transition-delay: .6s;
+	color: white;
+	line-height: 2rem;
+
+
+
+}
+
+.contenedorSupremo:hover .contenido div {
+	transform: scale(1.1);
+
+
+}
+
+.contenedorSupremo:hover .contenido h1 ,
+.contenedorSupremo:hover .contenido  p ,
+.contenedorSupremo:hover .contenido  button{
+
+
+	color: white;
+
+}
+
+
+
+
+@keyframes animacionContenido {
+
+	0% , 7% {
+
+
+		transform: translateY(0%);
+		opacity: 0;
+	}
+
+	12% , 100%{
+
+
+		transform: translateY(-30%);
+		opacity: 1;
+	}
+
+
+
+}
+
+
+/*=================================
+
+				CAPA III
+
+====================================*/
+
+.contenedorNumero {
+
+	position: absolute;
+	top: 0;
+	z-index: 10000;
+	font-size: 12rem;
+	transform: translateY(0%) translateX(0%);
+	font-weight: bold;
+	
+	transition: all .5s;
+	opacity: 0;
+	height: 12rem;
+	width: 14rem;
+	line-height: 12rem;
+	
+
+}
+
+.aLaDerecha{
+
+	
+	right: 1rem;
+
+}
+
+.aLaIzquierda{
+
+	
+	left: 2rem;
+
+}
+
+.contenedorSupremo:hover .contenedorNumero{
+
+	transform: translateY(-20%) translateX(0%);
+	opacity: 1;
+
+}
+
+
+
+
+.numero{
+
+	position: absolute;
+	z-index: 10000;
+
+}
+
+.atras{
+
+	color: rgba(0,0,0,.5);
+	text-shadow: 1px 1px 1px white,
+				 -1px 1px 1px white,
+				 1px -1px 1px white;
+
+
+}
+
+
+.frente{
+	
+	transition: all .5s;
+	clip-path: inset(100% 0 0 0);
+	width: 100%;
+	color: white;
+
+}
+
+
+.contenedorSupremo:hover .frente{
+
+	transition-delay: .6s;
+	clip-path: inset(0 0 0 0);
+	
+
+}
+
+.fondo2{
+
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	height:100%;
+
+	left: -100%;
+	background: linear-gradient(60deg, rgba(209,209,209,0.9136029411764706) 50%, rgba(209,209,209,0.8939950980392157) 75%, rgba(209,209,209,1) 95%);
+	z-index: 1000;
+
+	transition: all .4s;
+	transition-delay: .3s;
+	
+}
+.contenedorSupremo:hover .fondo2{
+
+	left: 0;
+}
+
+
+.contenedorSupremo a{
+
+	position: relative;
+	z-index: 15000;
+
+}
+
+
+@media(max-width: 560px){
+
+	.contenedorSupremo h1{
+
+	font-size: 1.8rem;
+	
+	
+
+	}
+
+}
+
+@media(max-width: 468px){
+
+	.contenedorSupremo h1{
+
+	font-size: 1.5rem;
+
+	}
+
+	.contenedorSupremo p{
+
+	font-size: .8rem;
+	
+}
+
+
+
+.boton{
+
+	
+	padding: .2rem .5rem;
+	
+	font-size: 1rem;
+	
+	width: 6rem;
+
+}
+
+
+}
+
+
+
+@media(max-width: 992px){
+
+
+
+.contenedorNumero {
+
+	font-size: 10rem;
+	
+	
+	height: 10rem;
+	width: 12rem;
+	line-height: 12rem;
+	
+
+}
+
+.contenedorSupremo:hover .contenedorNumero{
+
+	transform: translateY(-30%) translateX(0%);
+	opacity: 1;
+
+}
+
+
+
+
+
+}
+
+
+
+.contenedorSupremo:hover .contenedorNumero{
+
+	transform: translateY(-30%) translateX(0%);
+	opacity: 1;
+
+}
+
+
+
+
+
+@media(max-width: 600px){
+
+	.contenedorSupremo:hover .contenedorNumero{
+
+	
+	opacity: 0;
+
+}
+
+
+
+}
+
