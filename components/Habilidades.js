@@ -12,6 +12,8 @@ const Habilidades = ({textoTitulo})=>{
 
 	const arregloLetras = textoTitulo.split("");
 
+	let i = 0;
+
 
 
 
@@ -73,12 +75,16 @@ const Habilidades = ({textoTitulo})=>{
 
 		                  	arregloLetras.map((letra)=>{
 
+		                  		
+
 		                  		return(
 
-		                  					<span   className="">{letra}</span>
+		                  					<span   key={i} className="">{letra}</span>
 
 
 		                  				)
+
+		                  				i++;
 
 
 
