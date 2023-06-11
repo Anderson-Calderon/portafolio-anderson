@@ -30,6 +30,15 @@ const Trabajos = ()=>{
 									 urlImagen:"https://www.adslzone.net/app/uploads-adslzone.net/2021/10/lenguaje-de-programacion.jpg",
 									 urlProyecto:"https://portafolio-1-1-git-main-3lli0tald3rs0n.vercel.app/"
 
+								},
+								{
+
+									 numero : 3 ,
+									 titulo:"TransformaGreen" ,
+									 descripcion:"Proyecto tecnológico de reciclaje " ,
+									 urlImagen:"https://static.mercadonegro.pe/wp-content/uploads/2022/06/03160352/PORTAL-RECICLA-1.jpg",
+									 urlProyecto:"https://transformagreen.netlify.app/"
+
 								}
 
 
