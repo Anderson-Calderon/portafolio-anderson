@@ -470,6 +470,7 @@
 
 	.contenedorSupremo:hover .contenedorNumero{
 
+	display: none;
 	
 	opacity: 0;
 
