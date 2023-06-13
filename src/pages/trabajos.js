@@ -28,7 +28,7 @@ const Trabajos = ()=>{
 									 titulo:"Portafolio Web" ,
 									 descripcion:"Portafolio de mis proyectos" ,
 									 urlImagen:"https://www.adslzone.net/app/uploads-adslzone.net/2021/10/lenguaje-de-programacion.jpg",
-									 urlProyecto:"https://portafolio-1-1-git-main-3lli0tald3rs0n.vercel.app/"
+									 urlProyecto:"https://anderson-eight.vercel.app/"
 
 								},
 								{
