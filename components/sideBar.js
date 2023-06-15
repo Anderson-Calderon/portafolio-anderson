@@ -185,6 +185,10 @@ const SideBar = ()=>{
 													<FaLinkedinIn style={{color: 'white' , fontSize: '30px'}} />
 												</Link>
 
+												<Link href="https://github.com/Anderson-Calderon?tab=repositories" target="_blank">
+													<FaGithub  style={{color: 'white' , fontSize: '30px'}} />
+												</Link>
+
 
 												
 
