@@ -1,12 +1,17 @@
-import styles from '../src/styles/Header.module.css';
 
-// import { FaBars } from "react-icons/fa";
-
+//ENLACE
 import Link from 'next/link';
+
+
 
 import {useEffect,useState} from 'react';
 
+
 import UseContext from '../hooks/useContext';
+
+
+//HOJA DE ESTILOS
+import styles from '../src/styles/Header.module.css';
 
 const Header = ()=>{
 
@@ -32,11 +37,6 @@ const Header = ()=>{
 							
 						<div className="w-full">
 
-						
-
-								
-
-						
 
 							<h1>
 

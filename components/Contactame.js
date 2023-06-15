@@ -1,39 +1,77 @@
+//COMPONENTE DE NOTIFICACIÓN , GRACIAS POR CONTACTARNOS
+import { toast } from 'react-toastify';
 
+//COMPONENTES DE react
 import {useState , useEffect} from 'react';
 
 
 import dynamic from 'next/dynamic';
 
-//COMPONENTE DE NOTIFICACIÓN , GRACIAS POR CONTACTARNOS
-import { toast } from 'react-toastify';
-
-
 
 //HOJA DE ESTILOS 
-
 import styles from '../src/styles/Home.module.css';
 
+
+
+
+
 const MapWithNoSSR = dynamic(() => import('components/mapa'), {
-  ssr: false,
-  loading: ()=> <p>LOADING ...</p>
+
+    ssr: false,
+    loading: ()=> <p> LOADING ...</p>
+
+
+
 });
 
 const Contactame = ()=>{
 
-
+  //OBJETO EN EL CUAL SE ALMACENARAN LOS DATOS DEL USUARIO QUE QUIERE CONTACTARME
   const [form,setForm] = useState({});
 
   const [deshabilitarBoton , setDeshabilitarBoton] = useState(false);
 
 
+
+  //ANIMAR LETRAS DEL TEXTO
+  useEffect(()=>{
+
+    const letrasTitulo3 = document.querySelectorAll(".contactame h2 span");
+
+    animarLetras(letrasTitulo3);
+
+  },[]);
+
+    function animarLetras(letras){
+
+      
+        for(var i=0 ; i<letras.length ; i++){
+
+        
+          let alturaAnimado = letras[i].offsetTop;
+
+
+              letras[i].classList.add("letra","letra-"+i);
+
+          
+
+        }
+
+
+    }
+
+  //LÓGICA QUE UTILIZARES AL HACER EL ENVÍO DEL EMAIL
   const handleSubmit = (e)=>{
 
-    
+    //PREVENIMOS EL COMPORTAMIENTO POR DEFECTO DEL FORMULARIO.
     e.preventDefault();
 
-    console.log("enviando formulario ...");
 
+    //DESHABILITAMOS EL BOTÓN DE ENVÍO MIENTRAS EL EMAIL SE ESTÁ ENVIANDO . 
     setDeshabilitarBoton(true);
+
+
+
 
     fetch("https://formsubmit.co/ajax/anderson.calderoncampos@gmail.com", {
 
@@ -49,12 +87,17 @@ const Contactame = ()=>{
     .then(response => response.json())
     .then(data => {
 
-      console.log(data) 
       
-
+      
+      //SI EL EMAIL FUE ENVIADO CORRECTAMENTE
        if(data.success=="true"){
 
+          //RESETEAMOS LA INFORMACIÓN LLENANDO EN EL FORMULARIO POR PARTE DEL USUARIO
           setForm({nombre:"" , correo:"" , tema:"" , mensaje:""});
+
+
+
+          //  RELLENAMOS EL TOAST , OJO : ESTE TOAST LO MOSTRAMOS EN LAYOUT.
            toast.success('Gracias por contactarnos', {
             position: "top-right",
             autoClose: 5000,
@@ -71,18 +114,13 @@ const Contactame = ()=>{
 
        }
 
+       //HABILITAMOS EL BOTÓN PARA HACER OTRO ENVÍO DE EMAIL
        setDeshabilitarBoton(false);
 
        
 
     })
-    .catch(error => console.log(error));
-
-
-    console.log("ENVIANDO FORMULARIO");
-
-
-
+    .catch(error => console.log(error)); // EN CASO HAY ALGÚN ERROR AL REALIZAR EL ENVÍO DEL FORMULARIO
 
 
   }
@@ -99,7 +137,9 @@ const Contactame = ()=>{
             <div className="md:w-1/2 mb-10">
               
 
-              <h2> <span className="">C</span>
+              <h2>
+
+                  <span className="">C</span>
                   <span className="">o</span>
                   <span className="">n</span>
                   <span className="">t</span>
@@ -109,6 +149,8 @@ const Contactame = ()=>{
                   <span className="">a</span>
                   <span className="">m</span>
                   <span className="">e</span>
+
+
                 </h2>
 
 
@@ -132,6 +174,7 @@ const Contactame = ()=>{
                   />
 
                  <input   
+
                     required 
                     type="email" 
                     name="correo" 
@@ -157,12 +200,13 @@ const Contactame = ()=>{
                     />
 
                 <textarea 
-                required 
-                name="mensaje" 
-                placeholder="Mensaje" 
-                
-                onChange= {(e)=>{setForm({...form, [e.target.name] : e.target.value   }  ) }  }
-                value={form.mensaje}
+
+                  required 
+                  name="mensaje" 
+                  placeholder="Mensaje" 
+                  
+                  onChange= {(e)=>{setForm({...form, [e.target.name] : e.target.value   }  ) }  }
+                  value={form.mensaje}
 
                 >
                     
@@ -191,6 +235,8 @@ const Contactame = ()=>{
 
 
             </div>
+
+
 
             <div className="md:w-1/2">
               

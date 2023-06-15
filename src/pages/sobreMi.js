@@ -1,23 +1,16 @@
+
+// COMPONENTES 
 import Layout from '../../layout/Layout';
 import Habilidades from '../../components/Habilidades';
 
+
+
 import {useEffect} from 'react';
 
+
+
+
 const Habilities = ()=>{
-
-
-
-
-    useEffect(()=>{
-
-
-
-    	let letrasTitulo2 = document.querySelectorAll(".habilidades h2 span");
-        
-
-
-
-    },[]);
 
 
 
@@ -31,7 +24,6 @@ const Habilities = ()=>{
 
 				      >
 
-
 		        			<main className="md:pl-16 py-5 ">
 
 
@@ -39,9 +31,7 @@ const Habilities = ()=>{
 
 						            <Habilidades textoTitulo="Sobre Mi" />
 
-
-						          </section>
-
+						         </section>
 
 
 		        			</main>

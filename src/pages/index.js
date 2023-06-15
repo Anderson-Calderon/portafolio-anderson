@@ -5,25 +5,21 @@ import {useState,useEffect} from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 
-
 //LIBRERÍA DE ICONOS
 import {FaEye} from 'react-icons/fa';
 
 //COMPONENTES
 import Layout from '../../layout/Layout';
 import Header from '../../components/header';
-
-import Loading from '../../components/Loading';
-
-
 import Contactame from '../../components/Contactame';
-
 import Habilidades from '../../components/Habilidades';
 
 
 //HOJA DE ESTILOS 
 import styles from '@/styles/Home.module.css'
 
+
+//Context
 import UseContext from '../../hooks/useContext';
 
 
@@ -33,14 +29,9 @@ import UseContext from '../../hooks/useContext';
 export default function Home() {
 
 
-  //ME INDICA CUANDO SE MUESTRA Y CUANDO NO SE MUESTRA EL MENÚ
-  //const [menuVisible,setMenuVisible] = useState(false);
 
 
 
-
-  //===ME INDICA SI YA CARGARON TODOS LOS COMPONENTE O AÚN NO===
-  const [cargando,setCargando] = useState(true);
 
 
   const {menuVisible,setMenuVisible,trabajos,setTrabajos} = UseContext();
@@ -52,8 +43,8 @@ export default function Home() {
 
    if(menuVisible){
 
-        console.log("MENU VISIBLE");
-
+      
+        // SI EL MENPU ESTÁ VISIBLE , ENTONCES OCULTAMOS LA BARRA VERTICAL  DE SCROLL.
         document.querySelector("body").classList.add("ocultarScrollVertical");
 
     }else{
@@ -85,19 +76,18 @@ export default function Home() {
 
     let alturaAnimado1 = titulo1.offsetTop,
         alturaAnimado2 = titulo2.offsetTop,
-        scrollTop = document.documentElement.scrollTop,
-        alturaAnimado3 = titulo3.offsetTop;
+        alturaAnimado3 = titulo3.offsetTop,
+        scrollTop = document.documentElement.scrollTop;
        
 
 
     let letrasTitulo1 = document.querySelectorAll(".galeria-portafolio h2 span"),
         letrasTitulo2 = document.querySelectorAll(".habilidades h2 span"),
         letrasTitulo3 = document.querySelectorAll(".contactame h2 span"); 
-    console.log(letrasTitulo1.length)
+   
 
-
-    //BIEN CARGA LA PÁGINA ANIMAMOS LAS LETRAS DEL TITULO , SIEMPRE Y CUANDO ESTEMOS VISUALIZANDO
-    //ESTE TÍTULO.
+    //BIEN CARGA LA PÁGINA ANIMAMOS LAS LETRAS DEL TITULO , SIEMPRE Y CUANDO ESTEMOS VISUALIZANDO ESTE TÍTULO
+  
     if(alturaAnimado1 - 600 < scrollTop){
 
     animarLetras(letrasTitulo1);
@@ -123,7 +113,7 @@ export default function Home() {
 
     function animacionDeLetras(){
 
-      
+        //ALMACENAMOS CUANDO SCROLL HEMOS HECHO.
          let scrollTop = document.documentElement.scrollTop;
 
         if(alturaAnimado1 - 700 < scrollTop){
@@ -171,23 +161,6 @@ export default function Home() {
 
 
 
-    //OBTENEMOS EL VALOR DE LA VARIABLE emailEnviado DEL LOCAL STORAGE.
-    const emailEnviado = JSON.parse(localStorage.getItem("emailEnviado"));
-
-    if(emailEnviado){
-
-   
-     
-
-
-      //ELIMINAMOS LA VARIABLE emailEnviado DEL LOCALSTORAGE
-       localStorage.removeItem("emailEnviado");
-
-
-    }
-
-
-
   },[]);
  
 
@@ -215,14 +188,6 @@ export default function Home() {
         
 
         <main className="md:pl-16 pb-5 ">
-
-
-
-
-
-
-
-
 
 
 
@@ -265,9 +230,9 @@ export default function Home() {
 
                 >
                     
-                     <span></span>
+                    <span></span>
 
-                     Ver más!
+                    Ver más!
 
                 </Link>
 
@@ -288,7 +253,8 @@ export default function Home() {
                    VER PROYECTO
 
                 </div>
-                  <Image   src="/imagenes/logo-traviesitos.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto"/>
+
+                  <Image   src="/imagenes/logo-traviesitos.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="Imagen de ecommerce traviesitos" />
 
 
               </div>
@@ -306,7 +272,7 @@ export default function Home() {
 
                 </div>
 
-                <Image   src="/imagenes/logo-portafolio.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto"/>
+                <Image   src="/imagenes/logo-portafolio.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="imagen de mi portafolio web - anderson " />
 
               </div>
 
@@ -319,17 +285,6 @@ export default function Home() {
           </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
           <section className="md:flex  justify-beetwen gap-20 items-center habilidades mt-10 ">
 
             <Habilidades textoTitulo="Mis Habilidades" />
@@ -339,41 +294,19 @@ export default function Home() {
 
 
 
-
-
-
-
-
           <section className="md:flex gap-5 justify-beetwen items-center contactame py-5 mt-10">
 
             <Contactame />
 
           </section>
 
-         
-
-
-
-
-
-
-
-          
 
 
         </main>
 
        
 
-
-
-
       </Layout>
-
-
-
-
-
 
 
 

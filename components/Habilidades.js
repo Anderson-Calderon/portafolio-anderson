@@ -1,8 +1,9 @@
-
-
 import React from 'react';
+
+//COMPONENETE QUE CONTIENE MIS HÁBILIDADES
 import TextShpere from './TextShpere';
 
+//REACT
 import {useEffect} from 'react';
 
 
@@ -19,22 +20,17 @@ const Habilidades = ({textoTitulo})=>{
 
   useEffect(()=>{
 
-  	 let 
-       titulo2 = document.querySelector(".habilidades h2 ");
+  	 let  titulo2 = document.querySelector(".habilidades h2 ");
 
 
        
 
 
-    let 
-        letrasTitulo2 = document.querySelectorAll(".habilidades h2 span");
+    let letrasTitulo2 = document.querySelectorAll(".habilidades h2 span");
   
 
     //BIEN CARGA LA PÁGINA ANIMAMOS LAS LETRAS DEL TITULO , SIEMPRE Y CUANDO ESTEMOS VISUALIZANDO
     //ESTE TÍTULO.
-   
-
-  
     animarLetras(letrasTitulo2);
 
 
@@ -76,6 +72,7 @@ const Habilidades = ({textoTitulo})=>{
 		                  	arregloLetras.map((letra)=>{
 
 		                  		
+		                  		
 
 		                  		return(
 
@@ -84,8 +81,8 @@ const Habilidades = ({textoTitulo})=>{
 
 		                  				)
 
+		                  				
 		                  				i++;
-
 
 
 		                  	})

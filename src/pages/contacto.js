@@ -1,41 +1,13 @@
-import {useEffect} from 'react';
 
+//COMPONENTES
 import Layout from '../../layout/Layout';
 import Header from '../../components/header';
-
 import Contactame from '../../components/Contactame';
-
-
-
 
 
 const Contacto = ()=>{
 
-	useEffect(()=>{
-
-		const letrasTitulo3 = document.querySelectorAll(".contactame h2 span");
-
-		animarLetras(letrasTitulo3);
-
-	},[]);
-
-	  function animarLetras(letras){
-
-      
-        for(var i=0 ; i<letras.length ; i++){
-
-        
-          let alturaAnimado = letras[i].offsetTop;
-
-
-              letras[i].classList.add("letra","letra-"+i);
-
-          
-
-        }
-
-
-    }
+	
 
 
 	return(

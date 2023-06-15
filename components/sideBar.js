@@ -1,31 +1,32 @@
 
-
+// ICONOS DE FA
 import { FaLinkedinIn , FaGithub ,FaRegWindowClose} from "react-icons/fa";
 
+
+//COMPONENETES DE REACT
 import {useState , useEffect} from 'react';
+
+
+//ENLACE
 import Link from 'next/link';
 
 
 import UseContext from '../hooks/useContext';
 
+
+//ESTILOS
 import styles from '../src/styles/Barra.module.css';
 
 
+//ME SIRVE PARA OBTENER LA RUTA EN LA QUE ESTOY NAVEGANDO
 import {useRouter} from 'next/router';
 
 
 const SideBar = ()=>{
 
-
-
-
-
 		const {pathname} = useRouter();
 
 		useEffect(()=>{
-
-				
-
 
 				switch (pathname) {
 
@@ -36,27 +37,19 @@ const SideBar = ()=>{
 					case '/trabajos' : setTrabajos(true); break;
 					case '/contacto' : setContacto(true); break;
 
-
-
-
 				}
-
-
 
 		},[]);
 
 
-		const {menuVisible , setMenuVisible , clickEnLinkContacto, setClickEnLinkContacto , trabajos,setTrabajos , contacto , setContacto ,yo , setYo, habilidades,setHabilidades} = UseContext();
+		const {menuVisible , setMenuVisible ,  trabajos,setTrabajos , contacto , setContacto ,yo , setYo} = UseContext();
 
-	
+		//SE EJECUTARÁ CUANDO REALICE CLICK EN ALGÚN ENLACE DE MI BARRA DE NAVEGACIÓN
 		const clickEnLink = ()=>{
-
-			setClickEnLinkContacto(false);
+	
 			setTrabajos(false);
 			setContacto(false);
 			setYo(false);
-			setHabilidades(false);
-
 
 		}
 
@@ -95,14 +88,11 @@ const SideBar = ()=>{
 														  					setMenuVisible(false)
 																			clickEnLink();
 
-																			localStorage.setItem("linkActivado","");
-
-
+									
 																		}}>
 
 																		   <span className="logo">A</span>  <br/>    ANDERSON   <br /> 
 																		   <span>Programador Web</span> 
-
 
 
 													</Link>
@@ -123,7 +113,7 @@ const SideBar = ()=>{
 																			setMenuVisible(false)
 																			clickEnLink();
 																			setYo(true);
-																			localStorage.setItem("linkActivado","yo");
+																			
 																									
 																			}
 
@@ -140,17 +130,30 @@ const SideBar = ()=>{
 
 											</li>
 											
-											<li><Link href="trabajos" 
+											<li>
+
+												<Link href="trabajos" 
 													  className={trabajos ? styles.activado : ""}
 													  onClick={  (e)=>{  
 																							setMenuVisible(false)
 																							clickEnLink();
 																							setTrabajos(true);
-																							localStorage.setItem("linkActivado","trabajos");
 																							
 																							
-																					  }
-																			   }>TRABAJOS</Link></li>
+																							
+																		}
+
+																	}
+												>
+
+
+													TRABAJOS
+
+													</Link>
+
+											</li>
+
+
 											<li>
 
 												<Link 
@@ -163,7 +166,7 @@ const SideBar = ()=>{
 											           					clickEnLink();
 											           					setContacto(true);
 
-											           					localStorage.setItem("linkActivado","contacto");
+											           					
 
 											           				}}
 
@@ -174,6 +177,8 @@ const SideBar = ()=>{
 											      </Link>
 
 											</li>
+
+											
 											<li className="flex justify-center gap-2">
 
 												<Link href="https://www.linkedin.com/in/anderson-calder%C3%B3n-campos-69ab93228/" target="_blank">

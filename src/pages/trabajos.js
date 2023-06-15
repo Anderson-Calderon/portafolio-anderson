@@ -1,15 +1,55 @@
+
+
+
+// COMPONENTES
 import Layout from '../../layout/Layout';
+import Proyecto from '../../components/Proyecto';
+
+
+//COMPONENETE DE REACT
 import {useEffect} from 'react';
 
 
 import UseContext from '../../hooks/useContext';
 
 
-import Proyecto from '../../components/Proyecto';
+
 
 const Trabajos = ()=>{
 
 	const {clickEnLinkContacto, setClickEnLinkContacto} = UseContext();
+
+
+
+  //ANIMAR LETRAS DEL TEXTO
+  useEffect(()=>{
+
+    const letrasTitulo3 = document.querySelectorAll("h2 span");
+
+    animarLetras(letrasTitulo3);
+
+  },[]);
+
+    function animarLetras(letras){
+
+      
+        for(var i=0 ; i<letras.length ; i++){
+
+        
+          let alturaAnimado = letras[i].offsetTop;
+
+
+              letras[i].classList.add("letra","letra-"+i);
+
+          
+
+        }
+
+
+    }
+
+
+	// ARREGLO EL CUAL CONTIENE DATOS DE TODOS MIS PROYECTOS
 
 	const arregloProyectos = [ 
 								{
@@ -59,13 +99,24 @@ const Trabajos = ()=>{
 
 		      >
 
-			      
-
-		        
 
 		        <main className="md:pl-16 pb-5">
 
-		        	<h2 className="text-center  mb-10 text-white mt-10">Mis Trabajos</h2>
+		        	<h2 className="text-center  mb-10 text-white mt-10">
+		        		
+		        		<span>M</span>
+		        		<span>i</span>
+		        		<span>s</span>
+		        		<span> T</span>
+		        		<span>r</span>
+		        		<span>a</span>
+		        		<span>b</span>
+		        		<span>a</span>
+		        		<span>j</span>
+		        		<span>o</span>
+		        		<span>s</span>
+
+		        	</h2>
 
 		        	{
 
@@ -85,17 +136,12 @@ const Trabajos = ()=>{
 		        		})		
 
 
-		        	}
-
-
-		        
+		        	}	        
 
 		        </main>
 
 
 		     </Layout>
-
-
 
 
 			)

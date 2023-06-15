@@ -1,17 +1,13 @@
+
+
+//COMPONENETES REACT
 import {useEffect,useState} from 'react';
 
 
-
-//ICONO DE UBICACIÓN
-import icon from 'leaflet/dist/images/marker-icon.png';
-//SOMBRA DEL ICONO DE UBICACIÓN
-import iconShadow from 'leaflet/dist/images/marker-icon.png';
-
+//COMPONENETES DE NUESTRO MAPA LEAFLET
 import L from 'leaflet';
-
 //COMPONENTES PARA TRABAJAR CON EL MAPA DE LEAFLET
 import { MapContainer, TileLayer, Marker, useMap , Popup} from 'react-leaflet';
-
 //ESTILOS DEL MAPA DE LEAFLET
 import 'leaflet/dist/leaflet.css';
 
@@ -43,8 +39,6 @@ const Mapa = ()=>{
   	const center = [geoData.lat, geoData.lng];
 
   	
-
-
 	return (
 
 				<div>
