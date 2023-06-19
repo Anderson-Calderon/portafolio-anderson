@@ -14,12 +14,13 @@ import UseContext from '../../hooks/useContext';
 
 
 
-
+//{data:proyectos}
 const Trabajos = ()=>{
 
 	const {clickEnLinkContacto, setClickEnLinkContacto} = UseContext();
+	let i=0;
 
-
+	//console.log(proyectos);
 
   //ANIMAR LETRAS DEL TEXTO
   useEffect(()=>{
@@ -49,7 +50,7 @@ const Trabajos = ()=>{
     }
 
 
-	// ARREGLO EL CUAL CONTIENE DATOS DE TODOS MIS PROYECTOS
+	//ARREGLO EL CUAL CONTIENE DATOS DE TODOS MIS PROYECTOS
 
 	const arregloProyectos = [ 
 								{
@@ -89,6 +90,8 @@ const Trabajos = ()=>{
 
 
 
+
+
 	return(
 
 			<Layout
@@ -120,18 +123,27 @@ const Trabajos = ()=>{
 
 		        	{
 
-		        		arregloProyectos.map((proyecto)=>{
+		        		//proyectos.map(({attributes : proyecto})=>{
 
+		        		arregloProyectos.map((proyecto)=>{		
+
+		        					i++;
 
 		        				return(
 
-		        							<Proyecto 
 
-		        								key={proyecto.numero}
-		        								proyecto={proyecto} />
+		        							<Proyecto  
+
+		        								key={i}
+		        								proyecto={proyecto}
+
+
+		        							 />
 
 
 		        						)
+
+
 
 		        		})		
 
@@ -149,3 +161,31 @@ const Trabajos = ()=>{
 }
 
 export default Trabajos;
+
+
+// export async function getStaticProps(){
+
+
+// 	const respuesta = await fetch("http://127.0.0.1:8082/api/proyectos?populate=imagen&sort[0]=id%3Aasc");
+
+// 	const {data} = await  respuesta.json();
+
+// 	console.log(data);
+
+// 	return{
+
+
+// 			props:{
+
+
+// 						data
+
+// 				   }
+
+
+
+// 		}
+
+
+
+// }

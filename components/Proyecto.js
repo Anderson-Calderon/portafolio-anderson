@@ -13,8 +13,11 @@ const Proyecto = ({proyecto})=>{
 	
 	//OBTENEMOS TODAS LAS PROPIEDADES DEL OBJETO DENOMINADO PROYECTO
 
-	const {titulo , descripcion , numero , urlImagen,urlProyecto} = proyecto;
-	
+	//const {nombre:titulo , descripcion , numeroProyecto : numero , imagen :{data:{ attributes : { formats : {medium :{ url : urlImagen } }}}} , url : urlProyecto} = proyecto;
+
+	const {titulo , descripcion , numero , urlImagen  , urlProyecto} = proyecto;
+
+
 	return(
 
 
