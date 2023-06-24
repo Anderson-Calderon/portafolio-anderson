@@ -139,7 +139,7 @@ const Trabajos = ()=>{
 
 		        							<Proyecto  	
 
-		        								
+		        								key={proyecto.numero}
 		        								proyecto={proyecto}
 
 
