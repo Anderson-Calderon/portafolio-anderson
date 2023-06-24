@@ -1,24 +1,19 @@
-
-
-
 // COMPONENTES
 import Layout from '../../layout/Layout';
 import Proyecto from '../../components/Proyecto';
 
 
-//COMPONENETE DE REACT
+//HOOK
 import {useEffect} from 'react';
-
 
 import UseContext from '../../hooks/useContext';
 
 
 
-//{data:proyectos}
+
 const Trabajos = ()=>{
 
 	const {clickEnLinkContacto, setClickEnLinkContacto} = UseContext();
-	let i=0;
 
 	//console.log(proyectos);
 
@@ -80,6 +75,15 @@ const Trabajos = ()=>{
 									 urlImagen:"https://static.mercadonegro.pe/wp-content/uploads/2022/06/03160352/PORTAL-RECICLA-1.jpg",
 									 urlProyecto:"https://transformagreen.netlify.app/"
 
+								},
+								{
+
+									numero:4,
+									titulo:"RecordSystem",
+									 descripcion:"Proyecto de registro de usuarios " ,
+									 urlImagen:"https://img.freepik.com/vector-premium/interfaz-usuario-registro-registro-linea-usuarios-utilizan-interfaz-usuario-contrasena-inicio-sesion-segura_566886-1943.jpg?w=2000",
+									 urlProyecto:"https://fathomless-temple-32218-68183a9d0ad4.herokuapp.com/"
+
 								}
 
 
@@ -125,16 +129,17 @@ const Trabajos = ()=>{
 
 		        		//proyectos.map(({attributes : proyecto})=>{
 
-		        		arregloProyectos.map((proyecto)=>{		
-
-		        					i++;
+		        			arregloProyectos.map((proyecto)=>{
+		        				
+		        			console.log(proyecto);
+		        				
 
 		        				return(
 
 
-		        							<Proyecto  
+		        							<Proyecto  	
 
-		        								key={i}
+		        								
 		        								proyecto={proyecto}
 
 
@@ -142,8 +147,6 @@ const Trabajos = ()=>{
 
 
 		        						)
-
-
 
 		        		})		
 
