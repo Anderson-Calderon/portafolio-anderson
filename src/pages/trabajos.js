@@ -131,7 +131,7 @@ const Trabajos = ()=>{
 
 		        			arregloProyectos.map((proyecto)=>{
 		        				
-		        			console.log(proyecto);
+		        		
 		        				
 
 		        				return(

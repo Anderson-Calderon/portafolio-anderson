@@ -72,17 +72,24 @@ const Habilidades = ({textoTitulo})=>{
 		                  	arregloLetras.map((letra)=>{
 
 		                  		
-		                  		
+		                  		i++;
 
 		                  		return(
 
-		                  					<span   key={i} className="">{letra}</span>
+		                  					<span   
+		                  							
+		                  						key={i} 
+		                  						className=""
+		                  					>
+		                  						{letra}
+
+		                  					</span>
 
 
 		                  				)
 
 		                  				
-		                  				i++;
+		                  				
 
 
 		                  	})
