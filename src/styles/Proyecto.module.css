@@ -297,6 +297,27 @@
 
 }
 
+
+@media(max-width: 468px){
+
+
+.aLaDerecha,
+.aLaIzquierda{
+
+	
+	left: 0rem;
+
+}
+
+.contenido{
+
+	width: 100%;
+}
+
+
+}
+
+
 .contenedorSupremo:hover .contenedorNumero{
 
 	transform: translateY(-20%) translateX(0%);
