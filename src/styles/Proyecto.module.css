@@ -312,6 +312,12 @@
 .contenido{
 
 	width: 100%;
+	padding-left: 2rem;
+}
+
+.contenido:nth-child(3) h1 {
+	
+	font-size: 1.3rem;
 }
 
 
