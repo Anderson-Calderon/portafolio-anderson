@@ -48,9 +48,21 @@ const Trabajos = ()=>{
 	//ARREGLO EL CUAL CONTIENE DATOS DE TODOS MIS PROYECTOS
 
 	const arregloProyectos = [ 
+
+
 								{
 
-									 numero : 1 ,
+									numero:1,
+									titulo:"Landing Page",
+									 descripcion:"Envio de gmail" ,
+									 urlImagen:"https://i.pinimg.com/564x/91/de/78/91de78b61e8fcb31a17466e5819c204f.jpg",
+									 urlProyecto:"https://relaxed-kleicha-f494d8.netlify.app/"
+
+								},
+
+								{
+
+									 numero : 2 ,
 									 titulo:"Traviesitos" ,
 									 descripcion:"Ecommerce de ropa" ,
 									 urlImagen:"https://childrens-spaces.com/wp-content/uploads/2019/02/moda-infantil-810x401.jpg",
@@ -58,9 +70,11 @@ const Trabajos = ()=>{
 
 								},
 
+								
+
 								{
 
-									 numero : 2 ,
+									 numero : 3 ,
 									 titulo:"Portafolio Web" ,
 									 descripcion:"Portafolio de mis proyectos" ,
 									 urlImagen:"https://www.adslzone.net/app/uploads-adslzone.net/2021/10/lenguaje-de-programacion.jpg",
@@ -69,16 +83,19 @@ const Trabajos = ()=>{
 								},
 								{
 
-									 numero : 3 ,
+									 numero : 4 ,
 									 titulo:"TransformaGreen" ,
 									 descripcion:"Proyecto tecnológico de reciclaje " ,
 									 urlImagen:"https://static.mercadonegro.pe/wp-content/uploads/2022/06/03160352/PORTAL-RECICLA-1.jpg",
 									 urlProyecto:"https://transformagreen.netlify.app/"
 
 								},
+
+								
+
 								{
 
-									numero:4,
+									numero:5,
 									titulo:"RecordSystem",
 									 descripcion:"Proyecto de registro de usuarios " ,
 									 urlImagen:"https://img.freepik.com/vector-premium/interfaz-usuario-registro-registro-linea-usuarios-utilizan-interfaz-usuario-contrasena-inicio-sesion-segura_566886-1943.jpg?w=2000",
