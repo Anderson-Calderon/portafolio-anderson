@@ -243,7 +243,7 @@ export default function Home() {
 
            <div className="flex flex-wrap gap-0 galeria-fotos-portafolio w-full">
 
-           <Link href="https://traviesitos.store/" target="_blank">
+           <Link href="https://anxxiient.com/" target="_blank">
 
 
               <div className="contenedor-imagen">
@@ -254,7 +254,7 @@ export default function Home() {
 
                 </div>
 
-                  <Image   src="/imagenes/logo-traviesitos.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="Imagen de ecommerce traviesitos" />
+                  <Image   src="https://anxxiient.com/wp-content/uploads/2023/07/banner07.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="Imagen de ecommerce traviesitos" />
 
 
               </div>
@@ -262,7 +262,7 @@ export default function Home() {
 
             </ Link>
 
-            <Link href="https://anderson-eight.vercel.app/" target="_blank">
+            <Link href="https://oceanide.pe/" target="_blank">
 
               <div className="contenedor-imagen">
 
@@ -272,7 +272,7 @@ export default function Home() {
 
                 </div>
 
-                <Image   src="/imagenes/logo-portafolio.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="imagen de mi portafolio web - anderson " />
+                <Image   src="https://storage.planner5d.com/s/fd369aedb955e004138b72a34fd041fd_25.jpg?v=1516979059"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="imagen de mi portafolio web - anderson " />
 
               </div>
 
