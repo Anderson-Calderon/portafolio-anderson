@@ -24,7 +24,9 @@ const TextShpere = ()=>{
 											"HTML5",
 											"CSS3",
 											"WORDPRESS",
+											"ELEMENTOR",
 											"BOOTSTRAP",
+
 											"SQL"
 											
 

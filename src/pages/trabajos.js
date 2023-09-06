@@ -53,37 +53,72 @@ const Trabajos = ()=>{
 								{
 
 									numero:1,
-									titulo:"Landing Page",
-									 descripcion:"Envio de gmail" ,
-									 urlImagen:"https://i.pinimg.com/564x/91/de/78/91de78b61e8fcb31a17466e5819c204f.jpg",
-									 urlProyecto:"https://relaxed-kleicha-f494d8.netlify.app/"
+									titulo:"Anxxiient" ,
+									 descripcion:"Ecommerce de ropa" ,
+									 urlImagen:"https://anxxiient.com/wp-content/uploads/2023/07/banner07.jpg",
+									 urlProyecto:"https://anxxiient.com/"
+									
 
 								},
 
 								{
 
 									 numero : 2 ,
-									 titulo:"Traviesitos" ,
-									 descripcion:"Ecommerce de ropa" ,
-									 urlImagen:"https://childrens-spaces.com/wp-content/uploads/2019/02/moda-infantil-810x401.jpg",
-									 urlProyecto:"https://www.traviesitos.store/"
+									 titulo:"Oceanide",
+									 descripcion:"Hotel de cabañas" ,
+									 urlImagen:"https://storage.planner5d.com/s/fd369aedb955e004138b72a34fd041fd_25.jpg?v=1516979059",
+									 urlProyecto:"https://oceanide.pe/"
+
+								},
+
+								{
+
+									 numero : 3 ,
+									 titulo:"Equilibrium",
+									 descripcion:"Web de terapias alternativas" ,
+									 urlImagen:"https://fisiostar.com/wp-content/uploads/2018/12/terapia-alternativa-3.jpg",
+									 urlProyecto:"https://equilibriumalternativas.pe/"
+
+								},
+
+								{
+
+									 numero : 4 ,
+									 titulo:"Equilibrium",
+									 descripcion:"Administrador de reservas de citas" ,
+									 urlImagen:"https://img.freepik.com/vector-gratis/reserva-citas-calendario_52683-39079.jpg",
+									 urlProyecto:"https://equilibrium-reservas.netlify.app/"
+
+								},
+
+									{
+
+									 numero : 5 ,
+
+									 titulo:"Registro de Asistencia",
+									 descripcion:"Proyecto de registro de Asistencia " ,
+									 urlImagen:"https://www.buk.cl/hubfs/por-que-tener-un-control-de-asistencia-de-personal.jpg",
+									 urlProyecto:"https://asistenciasasciende.netlify.app/"
+									
+
+								},
+
+								{
+
+									 numero : 6 ,
+									 titulo:"Landing Page",
+									 descripcion:"Envio de gmail" ,
+									 urlImagen:"https://i.pinimg.com/564x/91/de/78/91de78b61e8fcb31a17466e5819c204f.jpg",
+									 urlProyecto:"https://relaxed-kleicha-f494d8.netlify.app/"
 
 								},
 
 								
 
+							
 								{
 
-									 numero : 3 ,
-									 titulo:"Portafolio Web" ,
-									 descripcion:"Portafolio de mis proyectos" ,
-									 urlImagen:"https://www.adslzone.net/app/uploads-adslzone.net/2021/10/lenguaje-de-programacion.jpg",
-									 urlProyecto:"https://anderson-eight.vercel.app/"
-
-								},
-								{
-
-									 numero : 4 ,
+									 numero : 7 ,
 									 titulo:"TransformaGreen" ,
 									 descripcion:"Proyecto tecnológico de reciclaje " ,
 									 urlImagen:"https://static.mercadonegro.pe/wp-content/uploads/2022/06/03160352/PORTAL-RECICLA-1.jpg",
@@ -95,11 +130,12 @@ const Trabajos = ()=>{
 
 								{
 
-									numero:5,
-									titulo:"RecordSystem",
-									 descripcion:"Proyecto de registro de usuarios " ,
-									 urlImagen:"https://img.freepik.com/vector-premium/interfaz-usuario-registro-registro-linea-usuarios-utilizan-interfaz-usuario-contrasena-inicio-sesion-segura_566886-1943.jpg?w=2000",
-									 urlProyecto:"https://fathomless-temple-32218-68183a9d0ad4.herokuapp.com/"
+									numero:8,
+									 titulo:"Portafolio Web" ,
+									 descripcion:"Portafolio de mis proyectos" ,
+									 urlImagen:"https://www.adslzone.net/app/uploads-adslzone.net/2021/10/lenguaje-de-programacion.jpg",
+									 urlProyecto:"https://anderson-eight.vercel.app/"
+									
 
 								}
 
