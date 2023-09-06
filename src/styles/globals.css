@@ -260,7 +260,7 @@ button.animar-de-abajo-arriba{
    width: 100%;
    height: auto;
    object-fit: cover;
-   object-position: top;
+   object-position: center;
    filter: brightness(50%);
    transition: all .3s;
 
@@ -718,6 +718,8 @@ input:internal-autofill-selected {
   transition: all ease-in-out .5s; 
   
 }
+
+
 
 
 @keyframes animacionLetra {

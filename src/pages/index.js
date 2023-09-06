@@ -254,7 +254,7 @@ export default function Home() {
 
                 </div>
 
-                  <Image   src="https://anxxiient.com/wp-content/uploads/2023/07/banner07.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="Imagen de ecommerce traviesitos" />
+                  <Image   src="/imagenes/logo-anxxiient.jpg"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="Imagen de ecommerce traviesitos" />
 
 
               </div>
@@ -272,7 +272,7 @@ export default function Home() {
 
                 </div>
 
-                <Image   src="https://storage.planner5d.com/s/fd369aedb955e004138b72a34fd041fd_25.jpg?v=1516979059"  className="imagen-portafolio" width={400} height={200} alt="Imagen Proyecto" alt="imagen de mi portafolio web - anderson " />
+                <Image   src="/imagenes/logo-oceanide.jpg"  className="imagen-portafolio " width={400} height={200} alt="Imagen Proyecto" alt="imagen de mi portafolio web - anderson " />
 
               </div>
 
