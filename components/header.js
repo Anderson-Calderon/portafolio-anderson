@@ -85,7 +85,7 @@ const Header = ()=>{
 						</div>
 
 
-						<p className="animar-de-abajo-arriba">Desarollador Front End</p>
+						<p className="animar-de-abajo-arriba">Desarollador Wev</p>
 
 
 						<p className="animar-de-abajo-arriba"></p>
