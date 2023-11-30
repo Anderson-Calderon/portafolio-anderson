@@ -174,7 +174,7 @@ export default function Home() {
 
       <Layout
 
-        title="Anderson | Front End Developer"
+        title="Anderson | Desarrollador Web"
         description="Hola , soy Anderson , desarrollador web"
        
 
