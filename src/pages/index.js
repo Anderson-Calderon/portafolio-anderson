@@ -262,7 +262,7 @@ export default function Home() {
 
             </ Link>
 
-            <Link href="https://oceanide.pe/" target="_blank">
+            <Link href="https://gentlemenstore.pe/" target="_blank">
 
               <div className="contenedor-imagen">
 
@@ -272,7 +272,7 @@ export default function Home() {
 
                 </div>
 
-                <Image   src="/imagenes/logo-oceanide.jpg"  className="imagen-portafolio " width={400} height={200} alt="Imagen Proyecto" alt="imagen de mi portafolio web - anderson " />
+                <Image   src="/imagenes/01gentlemenStore.jpg"  className="gentlemen imagen-portafolio " width={400} height={200} alt="Imagen Proyecto" alt="imagen de mi portafolio web - anderson " />
 
               </div>
 

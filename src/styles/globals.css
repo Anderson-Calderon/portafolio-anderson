@@ -266,6 +266,11 @@ button.animar-de-abajo-arriba{
 
 }
 
+.gentlemen{
+
+  object-position: top!important;
+
+}
 
 @media(max-width: 768px){
 

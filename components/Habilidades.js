@@ -104,7 +104,7 @@ const Habilidades = ({textoTitulo})=>{
 
 		                A incios del año 2021 descubrí mi pasión por el desarrollo web .
 		                Actualmente soy estudiante de desarrollo de software en el instituto
-		                San Ignacio de Loyola (ISIL) y cuento con experiencia en HTML , CSS , JS , REACT , WORDPRESS , BOOTSTRAP , etc.
+		                San Ignacio de Loyola (ISIL) y cuento con experiencia en HTML , CSS , JS , REACT , NODE , WORDPRESS , BOOTSTRAP , etc.
 		            
 		              </p>
 
